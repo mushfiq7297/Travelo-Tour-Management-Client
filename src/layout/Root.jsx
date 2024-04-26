@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../firebase/components/Navbar";
 import Footer from "../firebase/components/Footer";
 
+
 const Root = () => {
   return (
     <div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-
+import "animate.css";
 const Navbar = () => {
   const { theme, setTheme } = useState("light");
   const handleToggle = (e) => {
@@ -28,7 +28,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar fixed px-4 z-10 shadow-lg top-0">
+    <div className="navbar fixed px-4 z-10 shadow-lg top-0 hover:bg-indigo-950 text-white animate__animated animate__slideInLeft">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
