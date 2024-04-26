@@ -55,7 +55,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="font-bold text-2xl">
-          INTO THE <span className="text-primary">WILD</span>
+         Traveloo
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
