@@ -55,7 +55,11 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="font-bold text-2xl">
-         Traveloo
+          <div className="flex gap-2">
+          <img src="/src/assets/touristsSpot/logo.png" className="w-12 h-12 rounded-full" alt="" />
+         <h2 className="text-3xl my-2">Travelo</h2>
+          </div>
+         
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
