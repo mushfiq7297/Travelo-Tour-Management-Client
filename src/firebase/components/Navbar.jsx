@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "animate.css";
 const Navbar = () => {
   const { theme, setTheme } = useState("light");
@@ -28,7 +28,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar fixed px-4 z-10 shadow-lg top-0 hover:bg-indigo-950 text-white animate__animated animate__slideInLeft">
+    <div className="navbar fixed px-4 z-10 shadow-lg top-0 bg-indigo-950 text-white animate__animated animate__slideInDown">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -62,6 +62,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end space-x-2">
+      <Link to="/login">
         <a
           href="#_"
           className="relative inline-block px-4 py-2 font-medium group"
@@ -72,6 +73,7 @@ const Navbar = () => {
             LOGIN
           </span>
         </a>
+      </Link>
         <label className="swap swap-rotate">
           {/* this hidden checkbox controls the state */}
           <input

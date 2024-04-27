@@ -13,7 +13,7 @@ const Banner = () => {
   return (
     <div>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide className="bg-[url('https://i.ibb.co/W66Gv0b/banner-1.jpg')] w-full  bg-cover bg-center  font-bold">
+        <SwiperSlide className="bg-[url('https://i.ibb.co/W66Gv0b/banner-1.jpg')] w-full  bg-cover bg-center  font-bold ">
           <div className="text-4xl text-center pt-60 text-white">
             <Typewriter
               onInit={(typewriter) => {
