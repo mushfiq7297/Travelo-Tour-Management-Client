@@ -5,7 +5,7 @@ const Navbar = () => {
   const { theme, setTheme } = useState("light");
   const handleToggle = (e) => {
     if (e.target.checked) {
-      setTheme("synthwave");
+      setTheme("night");
     } else {
       setTheme("light");
     }
@@ -34,7 +34,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar fixed px-4 z-10 shadow-lg top-0 bg-indigo-950 text-white animate__animated animate__slideInDown">
+    <div className="navbar fixed px-4 z-10 shadow-lg top-0 bg-indigo-950 text-white animate__animated animate__slideInDown ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -90,7 +90,7 @@ const Navbar = () => {
             onChange={handleToggle}
             type="checkbox"
             className="theme-controller"
-            value="synthwave"
+            value="night"
           />
 
           {/* sun icon */}
