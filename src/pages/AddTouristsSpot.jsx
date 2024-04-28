@@ -1,6 +1,8 @@
 import "animate.css"
 
+
 const AddTouristsSpot = () => {
+    // const { user } = useContext(AuthContext);
     const handleAddSpot = event =>{
         event.preventDefault();
         
@@ -15,11 +17,28 @@ const AddTouristsSpot = () => {
         const seasonality = form.seasonality.value
         const traveltime = form.traveltime.value
         const totavisitorsperyear = form.totavisitorsperyear.value
+        const name = form.name.value
         const email = form.email.value
-        const password = form.password.value
 
-        const addNewSpot = {touristspotsname,countryname,location,shortdescription,photourl,averagecost,seasonality,traveltime,totavisitorsperyear,email,password}
+        const addNewSpot = {touristspotsname,countryname,location,shortdescription,photourl,averagecost,seasonality,traveltime,totavisitorsperyear,email,name}
         console.log(addNewSpot)
+
+        // //sending data to the server
+        fetch('http://localhost:5000/addTouristsspot',{
+            method: 'POST',
+            headers: {
+                'content-type':'application/json'
+            },
+            body: JSON.stringify(addNewSpot)
+        })
+        .then(res =>res.json())
+        .then(data => {
+            console.log(data);
+            if(data.insertedId){
+                
+            }
+        })
+
     }
   return (
     <div className="w-4/5 mx-auto py-10 px-4">
@@ -151,12 +170,12 @@ const AddTouristsSpot = () => {
             </div>
             <div className="col-span-full sm:col-span-2">
               <label htmlFor="city" className="text-lg font-bold">
-                Password
+                User name
               </label>
               <input
-                name="password"
-                type="password"
-                placeholder="Password"
+                name="name"
+                type="text"
+                placeholder="Name"
                 className="w-full rounded-md text-black  p-2 focus:ring p-2-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
               />
             </div>

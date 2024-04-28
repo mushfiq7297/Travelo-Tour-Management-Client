@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "animate.css";
+import { AuthContext } from "../../provider/AuthProvider";
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut().then().catch();
+  };
   const { theme, setTheme } = useState("light");
   const handleToggle = (e) => {
     if (e.target.checked) {
@@ -71,8 +76,26 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
-      <div className="navbar-end space-x-2">
-      <Link to="/login">
+      <div className="navbar-end gap-2">
+          {user ? (
+            <div>
+             <div className="tooltip tooltip-left  flex gap-2" data-tip={user?.displayName || user.email}>
+                <img
+                  src={user?.photoURL || "/src/assets/touristsSpot/ts-1.jpg"}
+                  alt=""
+                  className="w-10 h-10 mt-1 "
+                />
+                <button
+                onClick={handleLogOut}
+                className="btn bg-gray-800 rounded-none  text-white"
+              >
+                SIGN OUT
+              </button>
+            </div>
+              
+           </div>
+          ) : (
+            <Link to="/login">
         <a
           href="#_"
           className="relative inline-block px-4 py-2 font-medium group"
@@ -84,6 +107,9 @@ const Navbar = () => {
           </span>
         </a>
       </Link>
+          )}
+        </div>
+      
         <label className="swap swap-rotate">
           {/* this hidden checkbox controls the state */}
           <input
@@ -112,7 +138,7 @@ const Navbar = () => {
           </svg>
         </label>
       </div>
-    </div>
+    
   );
 };
 
