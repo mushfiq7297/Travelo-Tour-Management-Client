@@ -5,6 +5,11 @@ import Root from "../layout/Root";
 import ErrorPage from "../firebase/components/ErrorPage";
 import Login from "../authentication/Login";
 import Register from "../authentication/Register";
+import AllTouristsSpot from "../pages/AllTouristsSpot";
+import AddTouristsSpot from "../pages/AddTouristsSpot";
+import MyLists from "../pages/MyLists";
+import Blog from "../pages/Blog";
+import Contact from "../pages/Contact";
 
 
 const router = createBrowserRouter([
@@ -24,6 +29,26 @@ const router = createBrowserRouter([
         {
           path: "/register",
           element: <Register></Register>,
+        },
+        {
+          path: "/allTouristsspot",
+          element: <AllTouristsSpot></AllTouristsSpot>,
+        },
+        {
+          path: "/addTouristsspot",
+          element: <AddTouristsSpot></AddTouristsSpot>,
+        },
+        {
+          path: "/myList",
+          element: <MyLists></MyLists>,
+        },
+        {
+          path: "/blog",
+          element: <Blog></Blog>,
+        },
+        {
+          path: "/contact",
+          element: <Contact></Contact>,
         },
 ]},
   ]);

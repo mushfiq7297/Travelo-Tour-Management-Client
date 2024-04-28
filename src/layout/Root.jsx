@@ -7,13 +7,13 @@ import Footer from "../firebase/components/Footer";
 const Root = () => {
   return (
     <div>
-      <div>
+      <div className="h-16">
         <Navbar></Navbar>
       </div>
-      <div className="mx-auto h-screen">
+      <div className="mx-auto min-h-[calc(100vh-160px)]">
         <Outlet></Outlet>
       </div>
-      <div>
+      <div className=" h-16">
         <Footer></Footer>
       </div>
     </div>

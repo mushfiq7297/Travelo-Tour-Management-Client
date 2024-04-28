@@ -19,10 +19,16 @@ const Navbar = () => {
         <NavLink to="/allTouristsspot">ALL TOURISTS SPOT</NavLink>
       </li>
       <li>
-        <NavLink to="/addTopuristsspot">ADD TOURISTS SPOT </NavLink>
+        <NavLink to="/addTouristsspot">ADD TOURISTS SPOT </NavLink>
       </li>
       <li>
         <NavLink to="/myList">MY LIST </NavLink>
+      </li>
+      <li>
+        <NavLink to="/blog">BLOG </NavLink>
+      </li>
+      <li>
+        <NavLink to="/contact">CONTACT </NavLink>
       </li>
     </div>
   );
