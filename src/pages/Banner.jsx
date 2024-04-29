@@ -6,13 +6,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 // import required modules
-import { Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import Typewriter from "typewriter-effect";
 
 const Banner = () => {
   return (
     <div>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper autoplay={true} modules={[Autoplay]} className="mySwiper" data-swiper-autoplay="2000">
         <SwiperSlide className="bg-[url('https://i.ibb.co/W66Gv0b/banner-1.jpg')] w-full  bg-cover bg-center  font-bold ">
           <div className="text-4xl text-center pt-60 text-white">
             <Typewriter

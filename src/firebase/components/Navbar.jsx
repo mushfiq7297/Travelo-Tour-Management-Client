@@ -81,7 +81,7 @@ const Navbar = () => {
             <div>
              <div className="tooltip tooltip-left  flex gap-2" data-tip={user?.displayName || user.email}>
                 <img
-                  src={user?.photoURL || "/src/assets/touristsSpot/ts-1.jpg"}
+                  src={user?.photoURL || "/src/assets/userDefaultPic.png"}
                   alt=""
                   className="w-10 h-10 mt-1 "
                 />

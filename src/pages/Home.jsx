@@ -1,10 +1,12 @@
-import TouristsSpot from "./TouristsSpot";
+
+import AllTouristsSpot from "./AllTouristsSpot";
 import Banner from "./Banner"
 const Home = () => {
   return (
     <div>
         <Banner></Banner>
-        <TouristsSpot></TouristsSpot>   
+        <AllTouristsSpot></AllTouristsSpot>
+
     </div>
   );
 };
