@@ -1,5 +1,16 @@
+import { MdOutlinePeople } from "react-icons/md";
+import { IoMdTime } from "react-icons/io";
+
+
 const TouristsSpotCard = ({ TouristsSpot }) => {
-  const { photourl,location,countryname,touristspotsname,shortdescription  } = TouristsSpot;
+  const {
+    photourl,
+    touristspotsname,
+    averagecost,
+    seasonality,
+    traveltime,
+    totavisitorsperyear,
+  } = TouristsSpot;
   return (
     <div>
       <div className="card card-compact  bg-base-100 shadow-xl">
@@ -11,12 +22,22 @@ const TouristsSpotCard = ({ TouristsSpot }) => {
           />
         </figure>
         <div className="card-body">
-            <h5>{location}, {countryname}</h5>
-          <h2 className="card-title">{touristspotsname}</h2>
-          <p>{shortdescription}</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">View Details</button>
+        <h2 className="flex text-xl font-bold">{touristspotsname}</h2>
+          <div className="flex gap-4">
+            <p className="flex gap-1 my-1"><MdOutlinePeople className="my-1" />
+             {totavisitorsperyear}</p>
+             <p className="flex gap-1 my-1"><IoMdTime className="my-1"/>{traveltime}</p>
           </div>
+
+          <div className="flex gap-4">
+            
+            <h2 className="text-xl font-bold">{averagecost}</h2>
+            <p className=" flex gap-1 my-1 text-purple-800">{seasonality}</p>
+            
+          </div>
+        
+            <button className="btn btn-primary">View Details</button>
+          
         </div>
       </div>
     </div>
