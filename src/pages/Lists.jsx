@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const Lists = ({ TouristsSpot }) => {
+const Lists = ({ TouristsSpot, spots,setSpots }) => {
   const { _id, touristspotsname, location, countryname } = TouristsSpot;
   const handleDelete = (_id) => {
     console.log(_id);
@@ -27,6 +27,9 @@ const Lists = ({ TouristsSpot }) => {
               "Your Spot has been deleted.",
                 "success",
               );
+              const remaining = spots.filter(spot => spot._id = _id)
+              setSpots(remaining)
+
             }
           });
       }

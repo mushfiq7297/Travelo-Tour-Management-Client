@@ -8,12 +8,12 @@ import Register from "../authentication/Register";
 import AllTouristsSpot from "../pages/AllTouristsSpot";
 import AddTouristsSpot from "../pages/AddTouristsSpot";
 import MyLists from "../pages/MyLists";
-import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
 import UpdatePage from "../pages/UpdatePage";
 import ViewDetailsPage from "../pages/ViewDetailsPage";
 import PrivateRoute from "./PrivateRouter";
 import PrivateRouter from "./PrivateRouter";
+import AboutUs from "../firebase/components/AboutUs";
 
 
 const router = createBrowserRouter([
@@ -55,8 +55,8 @@ const router = createBrowserRouter([
           loader:({params}) => fetch(`http://localhost:5000/addTouristsspot/${params.id}`)
         },
         {
-          path: "/blog",
-          element: <Blog></Blog>,
+          path: "/aboutUs",
+          element: <AboutUs></AboutUs>,
         },
         {
           path: "/viewDetailsPage/:id",

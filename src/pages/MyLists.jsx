@@ -1,8 +1,10 @@
 import { useLoaderData } from "react-router-dom";
 import Lists from "./Lists";
+import { useState } from "react";
 
 const MyLists = () => {
   const TouristsSpots = useLoaderData();
+  const [spots, setSpots] = useState(TouristsSpots);
 
   return (
     <div>
@@ -29,6 +31,8 @@ const MyLists = () => {
                 <Lists
                   key={TouristsSpot._id}
                   TouristsSpot={TouristsSpot}
+                  spots = {spots}
+                  setSpots ={setSpots}
                 ></Lists>
               ))}
             </tbody>

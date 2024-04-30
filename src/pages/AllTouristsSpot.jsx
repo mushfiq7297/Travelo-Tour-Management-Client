@@ -13,6 +13,7 @@ const AllTouristsSpot = () => {
                 TouristsSpots.map(TouristsSpot => <TouristsSpotCard 
                 key={TouristsSpot._id}
                 TouristsSpot = {TouristsSpot}
+               
 
                 ></TouristsSpotCard>)
             }

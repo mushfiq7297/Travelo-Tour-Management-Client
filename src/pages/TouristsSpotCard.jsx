@@ -2,7 +2,7 @@ import { MdOutlinePeople } from "react-icons/md";
 import { IoMdTime } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-const TouristsSpotCard = ({ TouristsSpot }) => {
+const TouristsSpotCard = ({ TouristsSpot}) => {
   const {
     _id,
     photourl,
