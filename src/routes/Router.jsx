@@ -25,7 +25,7 @@ const router = createBrowserRouter([
         {
           path: "/",
           element: <Home></Home>,
-          loader:() => fetch('http://localhost:5000/addTouristsspot')
+          loader:() => fetch('https://tour-management-server-taupe.vercel.app/addTouristsspot')
         },
         {
           path: "/login",
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         {
           path: "/allTouristsspot",
           element: <AllTouristsSpot></AllTouristsSpot>,
-          loader:() => fetch('http://localhost:5000/addTouristsspot')
+          loader:() => fetch('https://tour-management-server-taupe.vercel.app/addTouristsspot')
         },
         {
           path: "/addTouristsspot",
@@ -47,12 +47,12 @@ const router = createBrowserRouter([
         {
           path: "/myList",
           element:<PrivateRouter><MyLists></MyLists></PrivateRouter> ,
-          loader:() => fetch('http://localhost:5000/addTouristsspot')
+          loader:() => fetch('https://tour-management-server-taupe.vercel.app/addTouristsspot')
         },
         {
           path: "/updatePage/:id",
           element: <PrivateRouter><UpdatePage></UpdatePage></PrivateRouter>,
-          loader:({params}) => fetch(`http://localhost:5000/addTouristsspot/${params.id}`)
+          loader:({params}) => fetch(`https://tour-management-server-taupe.vercel.app/addTouristsspot/${params.id}`)
         },
         {
           path: "/aboutUs",
@@ -61,7 +61,7 @@ const router = createBrowserRouter([
         {
           path: "/viewDetailsPage/:id",
           element: <PrivateRouter><ViewDetailsPage></ViewDetailsPage></PrivateRouter>,
-          loader:() => fetch('http://localhost:5000/addTouristsspot')
+          loader:() => fetch('https://tour-management-server-taupe.vercel.app/addTouristsspot')
         },
         {
           path: "/contact",
