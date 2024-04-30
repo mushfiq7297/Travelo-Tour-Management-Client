@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const Lists = ({ TouristsSpot }) => {
   const { _id, touristspotsname, location, countryname } = TouristsSpot;
-  const handleDelete = () => {
+  const handleDelete = (_id) => {
     console.log(_id);
     Swal.fire({
       title: "Are you sure?",
@@ -14,11 +15,20 @@ const Lists = ({ TouristsSpot }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        Swal.fire({
-          title: "Deleted!",
-          text: "Your file has been deleted.",
-          icon: "success",
-        });
+        fetch(`http://localhost:5000/addTouristsspot/${_id}`, {
+          method: "DELETE"
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            if (data.deletedCount > 0) {
+              Swal.fire(
+                "Deleted!",
+              "Your Spot has been deleted.",
+                "success",
+              );
+            }
+          });
       }
     });
   };
@@ -34,7 +44,9 @@ const Lists = ({ TouristsSpot }) => {
           {countryname}
         </td>
         <td className="flex justify-center items-center w-1/5">
+          <Link to={`/updatePage/${_id}`}>
           <button className="btn btn-info">Update</button>
+          </Link>
         </td>
         <td className="flex justify-center items-center w-1/5">
           <button onClick={() => handleDelete(_id)} className="btn btn-error">

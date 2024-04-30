@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import TouristsSpotCard from "./TouristsSpotCard";
 
 
+
 const AllTouristsSpot = () => {
     const TouristsSpots = useLoaderData()
     return (
@@ -12,6 +13,7 @@ const AllTouristsSpot = () => {
                 TouristsSpots.map(TouristsSpot => <TouristsSpotCard 
                 key={TouristsSpot._id}
                 TouristsSpot = {TouristsSpot}
+
                 ></TouristsSpotCard>)
             }
             </div>

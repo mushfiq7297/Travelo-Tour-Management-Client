@@ -54,6 +54,7 @@ const AddTouristsSpot = () => {
             icon: "success",
             confirmButtonText: "Cool",
           });
+          const remaining = spots.filter()
         }
       });
   };
