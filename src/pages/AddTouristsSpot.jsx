@@ -59,7 +59,7 @@ const AddTouristsSpot = () => {
       });
   };
   return (
-    <div className="w-4/5 mx-auto py-10 px-4">
+    <div className="w-4/5 mx-auto py-10 px-4 font-stack">
       <form
         onSubmit={handleAddSpot}
         action=""

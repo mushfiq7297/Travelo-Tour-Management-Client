@@ -17,7 +17,7 @@ const ViewDetailsPage = () => {
   } = spot;
 
   return (
-    <div className="my-4">
+    <div className="my-4 font-stack">
       <div
         data-aos="zoom-in-up"
         className="flex flex-col w-3/5 mx-auto p-6 space-y-6 overflow-hidden rounded-lg shadow-md bg-gray-900 text-gray-100"

@@ -1,7 +1,10 @@
+
+
+
 const Contact = () => {
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200">
+      <div className="hero min-h-screen font-stack">
         <div className="hero-content flex-col lg:flex-row">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">Need to contact us? Send us massage. Our team are always happy to help.</h1>

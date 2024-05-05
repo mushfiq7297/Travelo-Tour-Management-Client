@@ -36,7 +36,7 @@ const Lists = ({ TouristsSpot, spots,setSpots }) => {
     });
   };
   return (
-    <div>
+    <div className="font-stack">
       {/* row 1 */}
       <tr className="hover flex justify-between ">
         <td className="flex justify-center items-center  w-1/5">

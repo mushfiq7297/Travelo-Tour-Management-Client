@@ -37,7 +37,7 @@ const TouristsSpotCard = ({ TouristsSpot}) => {
 
           <div className="flex gap-4">
             <h2 className="text-xl font-bold">{averagecost}</h2>
-            <p className=" flex gap-1 my-1 text-purple-800">{seasonality}</p>
+            <p className=" flex gap-1 my-1 text-primary">{seasonality}</p>
           </div>
 
           <Link to={`/viewDetailsPage/${_id}`}>

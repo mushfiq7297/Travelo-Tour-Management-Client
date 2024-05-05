@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const AboutUs = () => {
   return (
     <div
-      className="hero h-screen"
+      className="hero h-screen font-stack"
       style={{ backgroundImage: "url(https://i.ibb.co/dBDRkny/ts-1.jpg)" }}
     >
       <div className="hero-overlay bg-opacity-60"></div>

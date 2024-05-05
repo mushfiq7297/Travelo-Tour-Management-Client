@@ -8,7 +8,7 @@ const MyLists = () => {
 
   return (
     <div>
-      <div className="w-4/5 mx-auto">
+      <div className="w-4/5 mx-auto font-stack">
         <h2 className="text-5xl font-bold text-center my-4">My lists</h2>
         <div className="overflow-x-auto my-10">
           <table className="table">
