@@ -14,7 +14,7 @@ const Banner = () => {
     <div>
       <Swiper autoplay={true} modules={[Autoplay]} className="mySwiper" data-swiper-autoplay="2000">
         <SwiperSlide className="bg-[url('https://i.ibb.co/W66Gv0b/banner-1.jpg')] w-full  bg-cover bg-center ">
-          <div className="text-4xl text-center pt-60   bg-black opacity-35 w-full text-white h-screen font-cerdaville ">
+          <div className="text-4xl text-center pt-60  bg-gradient-to-r from-[#0000006d] to-[#0000006d] w-full text-white h-screen font-cerdaville ">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -37,7 +37,7 @@ const Banner = () => {
           
         </SwiperSlide>
         <SwiperSlide className="bg-[url('https://i.ibb.co/mhkTNGj/banner-2.jpg')] w-full bg-cover bg-center ">
-        <div className="text-4xl text-center pt-60  bg-black opacity-35 w-full text-white h-screen font-cerdaville">
+        <div className="text-4xl text-center pt-60 bg-gradient-to-r from-[#0000006d] to-[#0000006d] w-full text-white h-screen font-cerdaville">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -60,7 +60,7 @@ const Banner = () => {
           
         </SwiperSlide>
         <SwiperSlide className="bg-[url('https://i.ibb.co/ws2StQV/banner-3.jpg')] w-full bg-cover bg-center ">
-        <div className="text-4xl text-center pt-60   bg-black opacity-35 w-full text-white h-screen font-cerdaville">
+        <div className="text-4xl text-center pt-60  bg-gradient-to-r from-[#0000006d] to-[#0000006d] w-full text-white h-screen font-cerdaville">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -83,7 +83,7 @@ const Banner = () => {
           
         </SwiperSlide>
         <SwiperSlide className="bg-[url('https://i.ibb.co/HXHf2mM/banner-6.jpg')] w-full bg-cover bg-center ">
-        <div className="text-4xl text-white text-center pt-60 bg-black opacity-35 w-full h-screen font-cerdaville">
+        <div className="text-4xl text-white text-center pt-60 bg-gradient-to-r from-[#0000006d] to-[#0000006d] w-full h-screen font-cerdaville">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -106,7 +106,7 @@ const Banner = () => {
           
         </SwiperSlide>
         <SwiperSlide className="bg-[url('https://i.ibb.co/fq60d7R/banner-5.jpg')] w-full bg-cover bg-center ">
-        <div className="text-4xl text-center pt-60   bg-black opacity-35 text-white w-full h-screen font-cerdaville">
+        <div className="text-4xl text-center pt-60  bg-gradient-to-r from-[#0000006d] to-[#0000006d] text-white w-full h-screen font-cerdaville">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -129,7 +129,7 @@ const Banner = () => {
           
         </SwiperSlide>
         <SwiperSlide className="bg-[url('https://i.ibb.co/LRxVsCB/banner-4.jpg')] w-full bg-cover bg-center">
-        <div className="text-4xl text-white text-center pt-60  bg-black opacity-35 w-full h-screen font-cerdaville">
+        <div className="text-4xl text-white text-center pt-60 bg-gradient-to-r from-[#0000006d] to-[#0000006d] w-full h-screen font-cerdaville">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
