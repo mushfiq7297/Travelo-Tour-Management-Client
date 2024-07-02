@@ -10,7 +10,8 @@
   <li>Curated Recommendations: Based on your interests and preferences, Travelo suggests destinations and experiences that are perfect for you.</li>
 </ul>
 <h3>Technology used:</h3>
-<p>ReactJS | TailwindCSS | ExpressJS | MongoDB | JWT  |  Swiper | Axios
+<p>ReactJS | TailwindCSS | ExpressJS | MongoDB | JWT  | Axios | Swiper
+
 </p>
 
 <h3>Installation and Setup:</h3>
